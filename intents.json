@@ -1,0 +1,72 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": ["Hola", "¿Qué tal?", "Buenos días", "Buenas tardes", "¡Hola!"],
+            "responses": ["¡Hola! Soy OsirisAI. ¿En qué puedo ayudarte hoy?", "Hola, soy OsirisAI. ¿Cómo puedo asistirte?", "¡Hola! Bienvenido, soy OsirisAI. ¿En qué puedo servirte?"],
+            "context_set": ""
+        },
+        {
+            "tag": "despedida",
+            "patterns": ["Adiós", "Hasta luego", "Nos vemos", "Chao", "¡Hasta pronto!"],
+            "responses": ["¡Adiós! Que tengas un buen día.", "Hasta luego. ¡Que tengas un buen día!", "Nos vemos pronto. ¡Cuídate!"],
+            "context_set": ""
+        },
+        {
+            "tag": "agradecimiento",
+            "patterns": ["Gracias", "¡Muchas gracias!", "Te agradezco", "Mil gracias", "¡Gracias por tu ayuda!"],
+            "responses": ["De nada. Siempre estoy aquí para ayudarte.", "¡No hay de qué! Estoy feliz de poder ayudarte.", "¡Gracias a ti por tu confianza!"],
+            "context_set": ""
+        },
+        {
+            "tag": "ayuda",
+            "patterns": ["¿Puedes ayudarme?", "Necesito ayuda", "¿Qué hago ahora?", "¿Cómo puedo contactarte?"],
+            "responses": ["Por supuesto. Soy OsirisAI, ¿en qué puedo asistirte?", "Claro, soy OsirisAI. ¿En qué necesitas ayuda?", "Puedes preguntarme cualquier cosa. Soy OsirisAI, ¿en qué puedo ayudarte?"],
+            "context_set": ""
+        },
+        {
+            "tag": "informacion",
+            "patterns": ["¿Qué servicios ofrecen?", "¿Cuál es tu horario de atención?", "¿Dónde están ubicados?", "¿Cuánto cuesta?", "¿Cuál es tu número de contacto?"],
+            "responses": ["Ofrezco una variedad de servicios. ¿En qué estás interesado específicamente?", "Mi horario de atención es de lunes a viernes de 9am a 6pm.", "Estoy ubicado en la Calle Principal #123.", "Los precios pueden variar según el servicio. ¿En qué estás interesado?", "Mi número de contacto es +123456789."],
+            "context_set": ""
+        },
+        {
+            "tag": "consulta_precios",
+            "patterns": ["¿Cuánto cuesta [servicio]?", "¿Cuál es el precio de [servicio]?", "¿Me podrías decir el costo de [servicio]?"],
+            "responses": ["El precio de [servicio] es de $X.", "El costo de [servicio] varía dependiendo de los detalles específicos. ¿Podrías proporcionarme más información para darte una estimación más precisa?"],
+            "context_filter": "informacion"
+        },
+        {
+            "tag": "crear_archivo",
+            "patterns": ["Quiero crear un archivo nuevo", "Crear documento", "Necesito generar un archivo"],
+            "responses": ["¡Claro! Soy OsirisAI. ¿Qué tipo de archivo te gustaría crear?", "Entendido. Soy OsirisAI, ¿cuál será el nombre y formato del archivo?", "¿Podrías proporcionarme más detalles sobre el archivo que deseas crear?"],
+            "context_set": ""
+        },
+        {
+            "tag": "abrir_programa",
+            "patterns": ["Abrir programa", "Iniciar aplicación", "Ejecutar software"],
+            "responses": ["¿Qué programa deseas abrir?", "Entendido. Por favor, dime el nombre del programa que quieres abrir.", "¿Cuál es el nombre del software que deseas ejecutar?"],
+            "context_set": ""
+        },
+        {
+            "tag": "crear_recordatorio",
+            "patterns": ["Quiero crear un recordatorio", "Recordar algo más tarde", "Crear una alarma"],
+            "responses": ["Entendido. Soy OsirisAI, ¿para cuándo deseas establecer el recordatorio?", "¿A qué hora necesitas que te recuerde?", "Por favor, proporciona los detalles del recordatorio que deseas crear."],
+            "context_set": ""
+        },
+        {
+            "tag": "crear_nota",
+            "patterns": ["Quiero hacer una nota", "Crear un apunte", "Tomar nota"],
+            "responses": ["¿Qué información deseas incluir en la nota?", "Entendido. Soy OsirisAI, por favor, proporciona los detalles que deseas anotar.", "Por favor, dime lo que quieres recordar y lo agregaré a tu nota."],
+            "context_set": ""
+        },
+        {
+            "tag": "leer_hora",
+            "patterns": ["¿Qué hora es?", "Dime la hora actual", "¿Puedes decirme la hora?"],
+            "responses": ["Son las [hora].", "En este momento son las [hora].", "La hora actual es [hora]."],
+            "context_set": ""
+        }
+
+    ]
+  }
+  
